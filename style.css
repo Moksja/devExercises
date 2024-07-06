@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("Rubik-VariableFont_wght.ttf") format("truetype");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+    background-color: #6D5D8E;
+}
+
+h1 {
+    width: 25%;
+    background-color: white;
+    margin: 2% 5%;
+    padding: 0.5%;
+    text-align: center;
+    border-radius: 5px;
+    color: #6D5D8E;
+}
+
+ul {
+    margin: 2% 7.5%;
+    font-weight: 500;
+    color: #1f121f;
+}
+
+li {
+    cursor: pointer;
+}

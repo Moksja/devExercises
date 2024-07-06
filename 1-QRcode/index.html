@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6e0742cd0f.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>QR Code Exercise</title>
+</head>
+<body>
+    <!-- Arrow -->
+    <div class="left-arrow" onclick="changeView()">
+        <i class="fa-solid fa-caret-left"></i>
+    </div>
+
+    <!-- Webview -->
+    <div class="web-container visible" style="--width: 90%;">
+        <div class="qr-container" style="--width: 45%; --display: flex;">
+            <img src="img/qr.png" alt="QR Code" style="--width: 35%;">
+            <h1 style="--size: 1.5rem;">Checkout my portfolio !</h1>
+            <p style="--size: 1rem;">Passionnée de résolution de problèmes et de design, j'ai décidé de me réorienter dans le développement web après plusieurs années dans la formation et l'animation.</p>
+            <p style="--size: 1rem;">Actuellement, je suis à la recherche d'une alternance Dev Web & Web Mobile pour Sept 2024.</p>
+        </div>
+    </div>
+
+
+    <!-- Mobileview -->
+    <div class="mobile-container" style="--width: 25%; --display: none;">
+        <div class="qr-container" style="--width: 65%;">
+            <img src="img/qr.png" alt="QR Code">
+            <h1 style="--size: 1rem;">Checkout my portfolio !</h1>
+            <p style="--size: .75rem;">Passionnée de résolution de problèmes et de design, j'ai décidé de me réorienter dans le développement web après plusieurs années dans la formation et l'animation.</p>
+            <p style="--size: .75rem;">Actuellement, je suis à la recherche d'une alternance Dev Web & Web Mobile pour Sept 2024.</p>
+        </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="right-arrow" onclick="changeView(), transition()">
+        <i class="fa-solid fa-caret-right"></i>
+    </div>
+
+    <!-- Project Infos -->
+     <div class="project-infos" style="--width: 7.5%; --height: 5.5%">
+        <i class="fa-solid fa-clock">  1h30</i>
+        <i class="fa-solid fa-microchip">  No AI</i>
+     </div>
+
+</body>
+</html>
